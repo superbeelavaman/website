@@ -1,0 +1,22 @@
+body {
+    color: #f5b;
+}
+.bgimage {
+    background-color: #88a;
+    background-image: url("/Images/DingusSun.jpg");
+}
+.article-content-block {
+    background-color: #222;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #b5f;
+}
+a {
+    color: #88f;
+}
+li a {
+    color: #f5b;
+}
+h6 a {
+    color: #b5f;
+}

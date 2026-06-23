@@ -1,0 +1,64 @@
+<div class="navbar no-print">
+    <span class="nav-button">
+        <a href="/?<!--args-->p=/">
+            <div class="nav-content">
+                <img src="/Images/mudkip.png" alt="Page Icon" style="height:100%; margin: 0px;">
+            </div>
+        </a>
+    </span>
+    <span class="nav-button">
+        <a href="/?<!--args-->p=/Projects">
+            <div class="nav-content">
+                Projects
+            </div>
+        </a>
+        <div class="dropdown-content">
+            <a href="/?<!--args-->p=/Projects/wiitop/" class="nav-button">
+                <div class="nav-content">
+                    Wiitop
+                </div>
+            </a>
+        </div>
+    </span>
+    <span class="nav-button">
+        <a href="/?<!--args-->p=/Contact" >
+            <div class="nav-content">
+                Contact
+            </div>
+        </a>
+    </span>
+    <span class="nav-button">
+        <a href="/?<!--args-->p=/webring" >
+            <div class="nav-content">
+                Webring?
+            </div>
+        </a>
+    </span>
+    <span class="nav-button" style="float: right; margin-right:0;">
+        <div class="nav-content">
+            <label for="theme">Theme: </label>
+            <select name="theme" id="theme" onchange="changeTheme(this.value)">
+                <option value="default">Page Default</option>
+                <option value="Light"<!--themeLight-->>Light</option>
+                <option value="Dark"<!--themeDark-->>Dark</option>
+            </select>
+        </div>
+    </span>
+    <!--userbar-->
+</div>
+<script>
+    function replaceUrlParam(url, paramName, paramValue) {
+        if (paramValue == null) {
+            paramValue = '';
+        }
+        var pattern = new RegExp('\\b('+paramName+'=).*?(&|#|$)');
+        if (url.search(pattern)>=0) {
+            return url.replace(pattern,'$1' + paramValue + '$2');
+        }
+        url = url.replace(/[?#]$/,'');
+        return url + (url.indexOf('?')>0 ? '&' : '?') + paramName + '=' + paramValue;
+    }
+    function changeTheme(theme) {
+        window.location.href = replaceUrlParam('/?<!--args-->p=<!--path-->', "theme", theme)
+    }
+</script>

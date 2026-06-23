@@ -1,0 +1,66 @@
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Disallow: /
+
+User-agent: Bingbot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: Claude-Web 
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Applebot 
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Googlebot-Image
+Disallow: /
+
+User-agent: Googlebot-Video
+Disallow: /
+
+User-agent: Slurp
+Disallow: /
+
+User-agent: DuckDuckBot
+Disallow: /
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: HTTrack
+Disallow: /
+
+User-agent: Jon Arbuckle
+Disallow: /robots.txt
+# trollage
+
+User-agent: Garfield
+Disallow: /Lasagne/
+
+User-agent: archive.org_bot
+Disallow:
+
+User-agent: Engineer TF2
+Disallow: /teleporting/bread

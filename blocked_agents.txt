@@ -1,0 +1,17 @@
+Googlebot
+Bingbot
+GPTBot
+Claude-Web 
+ClaudeBot
+CCBot
+FacebookBot
+Applebot-Extended
+Applebot 
+Diffbot
+Googlebot-Image
+Googlebot-Video
+Slurp
+DuckDuckBot
+Baiduspider
+YandexBot
+HTTrack

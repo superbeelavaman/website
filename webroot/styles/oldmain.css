@@ -1,0 +1,30 @@
+@font-face {
+    font-family: comicsansms;
+    src: url(/fonts/comic.ttf);
+}
+div {
+    margin-left: 32px;
+}
+body {
+    color: #503;
+}
+p {
+    width: 80%;
+}
+.definition {
+    cursor: help;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #305;
+}
+a {
+    color: #503;
+}
+.error {
+    background-color: #f44;
+    color: #000;
+    width: fit-content;
+    padding: 0.3%
+}

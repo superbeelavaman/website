@@ -1,0 +1,33 @@
+Title: Sign Up<br>
+Icon: /favicon.ico<br>
+Style: /styles/newLight.css<br>
+Description: Sign up.<br>
+Author: SuperbeeLavaman<br>
+Content: 
+<div class="article-content-block">
+    <h1>Sign Up</h1>
+    <p><!--errortext--></p>
+    <p>
+        <form action="/signup/">
+            <table>
+                <tr>
+                    <td><label for="username">Username: </label></td>
+                    <td><input type="text" name="username" id="username"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password: </label></td>
+                    <td><input type="password" name="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="password"> Repeat Password: </label></td>
+                    <td><input type="password" name="password2" id="password2"></td>
+                </tr>
+                <tr>
+                    <td><!--formargs--></td>
+                    <td><input type="submit" name="submit" id="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <p>Already have an account? <a href="/?<!--args-->p=/login/">Sign In.</a></p>
+    </p>
+</div>

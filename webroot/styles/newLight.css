@@ -1,0 +1,19 @@
+body {
+    color: #503;
+}
+.bgimage {
+    background-color: #0f8340;
+    background-image: url("/Images/DingusGrass.jpg");
+}
+.article-content-block {
+    background-color: #ddd;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #305;
+}
+h6 a {
+    color: #305;
+}
+li a {
+    color: #503;
+}

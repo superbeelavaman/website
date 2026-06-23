@@ -1,0 +1,189 @@
+@font-face {
+    font-family: comicsansms;
+    src: url(/fonts/comic.ttf);
+}
+
+@supports (display: grid) {
+    #oldmodelink {
+        display: none;
+    }
+}
+
+.fitinpageplease {
+	max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+body {
+    color: #f5b;
+}
+.bgimage {
+    background-color: #88a;
+    background-image: url("/Images/DingusSun.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top:-10%;
+    left:-10%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    width: 120%;
+    height: 130vh;
+    height: 130svh;
+    margin: none;
+}
+.gray {
+    background-color: #333;
+    color: #ccc;
+}
+footer {
+    padding: 1%;
+    margin: none;
+}
+header {
+    position: sticky;
+    top:0;
+}
+.bottomright {
+    position:fixed;
+    right:20;
+    bottom:20;
+}
+#grid-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+}
+article {
+    width: 65%;
+    margin: auto;
+    margin-top: 0;
+}
+.article-content-block {
+    background-color: #222;
+    padding: 3%;
+}
+.navbar {
+    background-color: #333;
+    color: #fff;
+    height: 48px;
+    padding:none;
+
+}
+.nav-button {
+    position:relative;
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #000;
+    padding: 6px;
+    background-color: #333;
+    height: 32px;
+    color: #fff;
+}
+.nav-content {
+    height: 32px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.nav-content img {
+    height: 32px;
+    width: 32px;
+    object-fit: cover;
+    margin-right: 6px;
+}
+.definition {
+    cursor: help;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+.dropdown-content {     
+    display: none;
+    position: absolute; 
+    margin-left: -8px;
+    margin-top: 8px;
+    width: max-content;
+    background-color: #444;
+    z-index: 1;
+    border: 2px solid #000;
+}
+.nav-button a {
+    text-decoration: none;
+}
+.nav-button:hover {
+    background-color: #444;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #b5f;
+	margin-bottom: 0px;
+}
+a {
+    color: #88f;
+}
+li a {
+    color: #f5b;
+}
+h6 a {
+	color: #b5f;
+}
+.subtitle, .subtitle * {
+	font-size: 10pt;
+	color: #888;
+}
+.nav-button:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content .nav-button {
+    width: calc(100% - 16px);
+}
+.error {
+    background-color: #f44;
+    color: #000;
+    width: fit-content;
+    padding: 0.3%
+}
+.container {
+    display: block;
+}
+@media print {    
+    .no-print, .no-print * {
+        display: none !important;
+    }
+	article {
+    	width: 100%;
+	    margin: auto;
+	    margin-top: 0;
+	}
+    .article-content-block {
+        break-inside: auto;
+    }
+    h2, h3 {
+        break-after: avoid;
+    }
+    p, ul, li {
+        break-inside: avoid;
+    }
+    #grid-container {
+        display: block;
+        position: static;
+        min-height: unset;
+    }    
+    .bgimage {
+        display: none;
+    }
+	.container {
+		break-inside: avoid;	
+	}
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}
